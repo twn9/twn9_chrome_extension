@@ -1,0 +1,33 @@
+{
+    "name": "Pass",
+    "version": "1.0",
+    "description": "Extension stores urls and can be password protected",
+    "manifest_version": 2,
+
+    "background": {
+        "scripts": ["background.js"],
+        "persistent": false
+    },
+
+    "options_page": "options.html",
+    
+    "browser_action": {
+        "default_icon": "bookmark.png",
+        "default_popup": "popup.html"
+    },
+
+    "icons": {
+        "16": "bookmark.png",
+        "48": "bookmark.png",
+        "128": "bookmark.png"
+      },
+
+    "permissions": [
+        "activeTab",
+        "storage",
+        "declarativeContent",
+        "tabs",
+        "storage",
+        "contextMenus"
+    ]
+}
